@@ -1,0 +1,14 @@
+{
+  "name": "zorvyn-rbac-service",
+  "version": "1.0.0",
+  "description": "Node.js RBAC user and role management service",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
