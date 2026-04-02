@@ -1,0 +1,26 @@
+{
+  "name": "zorvyn-finance-service",
+  "version": "2.0.0",
+  "description": "Express + Prisma + Redis backend for financial records management",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init_financial_records",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "express": "^4.21.2",
+    "redis": "^4.7.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
